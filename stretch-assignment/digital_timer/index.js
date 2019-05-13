@@ -20,7 +20,6 @@ class Timer{
         if(this.tens===1 || this.begin==false){
             return
         }
-
         this.hs++
         if(this.hs>9){
             this.hs=0
@@ -48,11 +47,14 @@ class Timer{
             document.querySelectorAll('.digit').forEach(item=>item.style.color='black')
         }
     }
-    boot(){
+    boot(e){
         this.begin=true
     }
-    running(){
+    running(e){
         return this.begin
+    }
+    stop(e){
+        this.begin=false
     }
 }
 
@@ -70,10 +72,7 @@ window.setInterval=function(cb, caller, timer){
 window.setInterval(counter.increment,counter,10)
 
 document.querySelector('#btn').addEventListener('click',(e)=>{
-    if(counter.tens>0){
-        counter.reboot()
-    }else
-        console.log(counter);
+    counter.reboot()
 })
 
 document.querySelector('#start').addEventListener('click',(e)=>{
@@ -81,3 +80,5 @@ document.querySelector('#start').addEventListener('click',(e)=>{
         counter.boot()
     }
 })
+
+document.querySelector('#stop').addEventListener('click',(e)=>counter.stop())
