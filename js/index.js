@@ -8,15 +8,14 @@ import contact from './contact.js'
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', SC["nav"]["img-src"])
 
-
 let call=document.getElementById('cta-img')
-call.setAttribute('src',SC.cta["img-src"])
-
-call.addEventListener('click',d)
-document.querySelector('.cta-text').querySelector('button').addEventListener('click',c)
+call.setAttribute('src', SC["cta"]["img-src"])
 
 let middleImg=document.getElementById('middle-img')
 middleImg.setAttribute('src',SC["main-content"]["middle-img-src"])
+
+call.addEventListener('click',d)
+document.querySelector('.cta-text').querySelector('button').addEventListener('click',c)
 
 run()
 mainRun()

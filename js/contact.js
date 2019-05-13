@@ -7,7 +7,7 @@ export default function(){
     contact.querySelectorAll('p').forEach((item,index)=>{
         switch(index){
             case 0:
-                item.textContent=content.address
+                item.innerHTML=content.address
                 break;
             case 1:
                 item.textContent=content.phone

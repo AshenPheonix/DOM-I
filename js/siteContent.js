@@ -28,7 +28,7 @@ export default {
     },
     "contact": {
       "contact-h4" : "Contact",
-      "address" : "123 Way 456 Street Somewhere, USA",
+      "address" : "123 Way 456 Street<br>Somewhere, USA",
       "phone" : "1 (888) 888-8888",
       "email" : "sales@greatidea.io",
     },
