@@ -21,4 +21,9 @@ export default function(){
     let fifth=content[4]
     fifth.childNodes[1].textContent=siteContent["main-content"]["vision-h4"]
     fifth.childNodes[3].textContent=siteContent["main-content"]["vision-content"]
+
+    content.forEach(item=>{
+        let random=[Math.round(Math.random()*255),Math.round(Math.random()*255),Math.round(Math.random()*255)]
+        item.style.color=`RGB(${random[0]},${random[1]},${random[2]})`
+    })
 }
