@@ -2,7 +2,8 @@ import SC from "./siteContent.js";
 import run from './updateNav.js';
 import ctaRun from './updateCTA.js'
 import mainRun from './mainRun.js';
-import footRun from './foot.js'
+import footRun from './foot.js';
+import contact from './contact.js'
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', SC["nav"]["img-src"])
@@ -18,3 +19,4 @@ run()
 mainRun()
 ctaRun()
 footRun()
+contact()
