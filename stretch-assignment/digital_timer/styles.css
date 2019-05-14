@@ -12,3 +12,24 @@ body {
 .redDigit {
   color: red;
 }
+
+button{
+  display: block;
+  border:5px lightgray outset;
+  text-align: center;
+  margin: 1rem;
+}
+button:hover{
+  border-style: inset;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.inner{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
