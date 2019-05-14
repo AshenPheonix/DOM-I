@@ -16,9 +16,12 @@ export function collapse(e){
     e.srcElement.addEventListener('mouseover',(e)=>{
         e.srcElement.style.display='none'
         let smily=document.createElement('button')
-        smily.textContent=':p'
+        let smilyImage=document.createElement('img')
+        
+        smilyImage.setAttribute('src','https://ih1.redbubble.net/image.291661880.8601/mp,550x550,matte,ffffff,t.3u1.jpg')
         smily.setAttribute('id','smily')
         document.querySelector('.main-content').appendChild(smily)
+        document.querySelector('#smily').appendChild(smilyImage)
         smily.addEventListener('click',restore)
     },{once:true})
     document.querySelectorAll('.text-content').forEach(item=>item.style.display='none')
